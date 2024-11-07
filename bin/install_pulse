@@ -12,7 +12,7 @@ msg() {
 
 #install pulseaudio and friends
 msg "installing pulsaudio packages"
-sudo pacman -Sy manjaro-pulse pa-applet pavucontrol || exit 1
+yay -Sy manjaro-pulse pa-applet-git pavucontrol || exit 1
 
 #comment out unneeded config
 msg "writing configuration"
